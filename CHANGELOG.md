@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/lukislp/studylife-discord/compare/v0.1.2...v0.1.3) (2026-09-11)
+
+
+### Bug Fixes
+
+* **ci:** push release commits as a deploy key so the default branch can be ruleset-protected ([e09d416](https://github.com/lukislp/studylife-discord/commit/e09d416de30168211a6c49f10a9bc9a07cf92812))
+
 ## [0.1.2](https://github.com/lukislp/studylife-discord/compare/v0.1.1...v0.1.2) (2026-09-04)
 
 
