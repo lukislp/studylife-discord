@@ -563,7 +563,7 @@ wheels = [
 
 [[package]]
 name = "studylife-discord"
-version = "0.1.dev1+g938cf14ba"
+version = "0.1.5.dev8+g2ca8d3045.d20260912"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi" },
