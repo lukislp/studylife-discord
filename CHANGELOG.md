@@ -1,3 +1,10 @@
+## [0.1.6](https://github.com/lukislp/studylife-discord/compare/v0.1.5...v0.1.6) (2026-09-12)
+
+
+### Bug Fixes
+
+* **ci:** pin uv via the digest-pinned builder image and set least-privilege token permissions ([#22](https://github.com/lukislp/studylife-discord/issues/22)) ([2596c61](https://github.com/lukislp/studylife-discord/commit/2596c61d29a84ab83066736ea48e70e87328173b))
+
 ## [0.1.5](https://github.com/lukislp/studylife-discord/compare/v0.1.4...v0.1.5) (2026-09-12)
 
 
