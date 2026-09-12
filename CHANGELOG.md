@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/lukislp/studylife-discord/compare/v0.1.4...v0.1.5) (2026-09-12)
+
+
+### Bug Fixes
+
+* **deps:** bump ruff from 0.16.5 to 0.16.6 ([2ca8d30](https://github.com/lukislp/studylife-discord/commit/2ca8d30454422be8f95a88848aaeb13d4f03fd59))
+
 ## [0.1.4](https://github.com/lukislp/studylife-discord/compare/v0.1.3...v0.1.4) (2026-09-11)
 
 
