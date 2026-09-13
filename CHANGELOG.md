@@ -1,3 +1,10 @@
+## [0.1.7](https://github.com/lukislp/studylife-discord/compare/v0.1.6...v0.1.7) (2026-09-13)
+
+
+### Bug Fixes
+
+* **docker:** apply Debian security updates at build time ([#29](https://github.com/lukislp/studylife-discord/issues/29)) ([fd12d67](https://github.com/lukislp/studylife-discord/commit/fd12d675b3730c89e4840aad5f034d7928f84ef3))
+
 ## [0.1.6](https://github.com/lukislp/studylife-discord/compare/v0.1.5...v0.1.6) (2026-09-12)
 
 
