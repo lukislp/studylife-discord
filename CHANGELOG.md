@@ -1,3 +1,10 @@
+## [0.1.8](https://github.com/lukislp/studylife-discord/compare/v0.1.7...v0.1.8) (2026-09-18)
+
+
+### Bug Fixes
+
+* **ci:** bump docker/build-push-action from 7.3.0 to 7.4.0 ([#36](https://github.com/lukislp/studylife-discord/issues/36)) ([5eb1a54](https://github.com/lukislp/studylife-discord/commit/5eb1a54d893a5db06fd3b5558e0034723e79b4fc))
+
 ## [0.1.7](https://github.com/lukislp/studylife-discord/compare/v0.1.6...v0.1.7) (2026-09-13)
 
 
