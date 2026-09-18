@@ -1,3 +1,10 @@
+## [0.1.11](https://github.com/lukislp/studylife-discord/compare/v0.1.10...v0.1.11) (2026-09-18)
+
+
+### Bug Fixes
+
+* **ci:** bump docker/setup-buildx-action from 4.3.0 to 4.4.0 ([#38](https://github.com/lukislp/studylife-discord/issues/38)) ([e7b5ff0](https://github.com/lukislp/studylife-discord/commit/e7b5ff09604d657a5319c0678cf2cc248f98b794))
+
 ## [0.1.10](https://github.com/lukislp/studylife-discord/compare/v0.1.9...v0.1.10) (2026-09-18)
 
 
