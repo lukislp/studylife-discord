@@ -1,5 +1,10 @@
 # studylife-discord
 
+[![CI](https://github.com/lukislp/studylife-discord/actions/workflows/ci.yml/badge.svg)](https://github.com/lukislp/studylife-discord/actions/workflows/ci.yml) [![OpenSSF Scorecard](https://img.shields.io/ossf-scorecard/github.com/lukislp/studylife-discord?label=openssf+scorecard&style=flat)](https://scorecard.dev/viewer/?uri=github.com/lukislp/studylife-discord) [![CodeQL](https://github.com/lukislp/studylife-discord/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/lukislp/studylife-discord/security/code-scanning)
+[![Release](https://img.shields.io/github/v/release/lukislp/studylife-discord)](https://github.com/lukislp/studylife-discord/releases)
+[![License: AGPL-3.0](https://img.shields.io/github/license/lukislp/studylife-discord)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB)](https://www.python.org/)
+
 Discord bot for [StudyLife](https://github.com/lukislp/studylife): slash commands for
 courses/timer/study time/study programs/notes, plus automatic focus-timer start/end
 channel announcements driven by StudyLife's own webhook system.
