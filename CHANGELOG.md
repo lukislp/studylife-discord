@@ -1,3 +1,11 @@
+## [0.1.10](https://github.com/lukislp/studylife-discord/compare/v0.1.9...v0.1.10) (2026-09-18)
+
+
+### Bug Fixes
+
+* **ci:** bump astral-sh/setup-uv from 10.0.1 to 10.1.0 ([#37](https://github.com/lukislp/studylife-discord/issues/37)) ([c06aeda](https://github.com/lukislp/studylife-discord/commit/c06aeda3a8d7493fba83039b5ecf8eb41f6774d9))
+* **deps:** bump ruff from 0.16.5 to 0.16.7 ([#39](https://github.com/lukislp/studylife-discord/issues/39)) ([179299f](https://github.com/lukislp/studylife-discord/commit/179299f5a2d5d148599faa7ef6289b8ff8d3dadb))
+
 ## [0.1.9](https://github.com/lukislp/studylife-discord/compare/v0.1.8...v0.1.9) (2026-09-18)
 
 
