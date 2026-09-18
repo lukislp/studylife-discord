@@ -1,3 +1,11 @@
+## [0.1.9](https://github.com/lukislp/studylife-discord/compare/v0.1.8...v0.1.9) (2026-09-18)
+
+
+### Bug Fixes
+
+* **deps:** bump httpx2 from 2.12.0 to 2.13.0 ([#40](https://github.com/lukislp/studylife-discord/issues/40)) ([c8080a5](https://github.com/lukislp/studylife-discord/commit/c8080a5c0c4c4e636e59bc69aa1b7b87284268b7))
+* **docker:** bump astral-sh/uv from 0.12.13 to 0.12.16 ([#41](https://github.com/lukislp/studylife-discord/issues/41)) ([8960faf](https://github.com/lukislp/studylife-discord/commit/8960faff03c195ca566f6ecbf55f325f973778b1))
+
 ## [0.1.8](https://github.com/lukislp/studylife-discord/compare/v0.1.7...v0.1.8) (2026-09-18)
 
 
