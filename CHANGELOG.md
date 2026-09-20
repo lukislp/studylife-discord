@@ -1,3 +1,10 @@
+## [0.1.12](https://github.com/lukislp/studylife-discord/compare/v0.1.11...v0.1.12) (2026-09-20)
+
+
+### Bug Fixes
+
+* **ci:** add Harden Runner in audit mode to every job ([#46](https://github.com/lukislp/studylife-discord/issues/46)) ([0b03f48](https://github.com/lukislp/studylife-discord/commit/0b03f48acccea84e4cd6e1b82ffb9382fb308434))
+
 ## [0.1.11](https://github.com/lukislp/studylife-discord/compare/v0.1.10...v0.1.11) (2026-09-18)
 
 
