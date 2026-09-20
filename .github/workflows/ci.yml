@@ -43,7 +43,7 @@ jobs:
             ghcr.io:443
             github.com:22
             github.com:443
-            hosted-compute-request-orchestrator-prod-eus-02.githubapp.com:443
+            *.githubapp.com:443
             mirror.gcr.io:443
             pkg-containers.githubusercontent.com:443
             production.cloudfront.docker.com:443
@@ -90,7 +90,7 @@ jobs:
             ghcr.io:443
             github.com:22
             github.com:443
-            hosted-compute-request-orchestrator-prod-eus-02.githubapp.com:443
+            *.githubapp.com:443
             mirror.gcr.io:443
             pkg-containers.githubusercontent.com:443
             production.cloudfront.docker.com:443
@@ -145,7 +145,7 @@ jobs:
             ghcr.io:443
             github.com:22
             github.com:443
-            hosted-compute-request-orchestrator-prod-eus-02.githubapp.com:443
+            *.githubapp.com:443
             mirror.gcr.io:443
             pkg-containers.githubusercontent.com:443
             production.cloudfront.docker.com:443
@@ -222,7 +222,7 @@ jobs:
             ghcr.io:443
             github.com:22
             github.com:443
-            hosted-compute-request-orchestrator-prod-eus-02.githubapp.com:443
+            *.githubapp.com:443
             mirror.gcr.io:443
             pkg-containers.githubusercontent.com:443
             production.cloudfront.docker.com:443
@@ -309,7 +309,7 @@ jobs:
             ghcr.io:443
             github.com:22
             github.com:443
-            hosted-compute-request-orchestrator-prod-eus-02.githubapp.com:443
+            *.githubapp.com:443
             mirror.gcr.io:443
             pkg-containers.githubusercontent.com:443
             production.cloudfront.docker.com:443
@@ -387,7 +387,7 @@ jobs:
             ghcr.io:443
             github.com:22
             github.com:443
-            hosted-compute-request-orchestrator-prod-eus-02.githubapp.com:443
+            *.githubapp.com:443
             mirror.gcr.io:443
             pkg-containers.githubusercontent.com:443
             production.cloudfront.docker.com:443
@@ -447,7 +447,7 @@ jobs:
             ghcr.io:443
             github.com:22
             github.com:443
-            hosted-compute-request-orchestrator-prod-eus-02.githubapp.com:443
+            *.githubapp.com:443
             mirror.gcr.io:443
             pkg-containers.githubusercontent.com:443
             production.cloudfront.docker.com:443
