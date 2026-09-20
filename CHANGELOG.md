@@ -1,3 +1,10 @@
+## [0.1.13](https://github.com/lukislp/studylife-discord/compare/v0.1.12...v0.1.13) (2026-09-20)
+
+
+### Bug Fixes
+
+* **ci:** correct missing Harden Runner allowlist ports (github.com:22, crl:80) ([#48](https://github.com/lukislp/studylife-discord/issues/48)) ([9f61bad](https://github.com/lukislp/studylife-discord/commit/9f61bade923fa26c72f1cc36c165fb67369b651e))
+
 ## [0.1.12](https://github.com/lukislp/studylife-discord/compare/v0.1.11...v0.1.12) (2026-09-20)
 
 
