@@ -16,11 +16,11 @@ small - but it is the same for every change, including the maintainer's own.
 ## What a pull request needs
 
 - **Conventional Commit title.** (`fix:`, `feat:`, `ci:`, `docs:`, ...) Unlike some of this
-  account's other repos, semantic-release is already live here: a `fix:`/`feat:` commit on `main`
-  drives a real version bump, a `CHANGELOG.md` entry, and a multi-arch, cosign-signed Docker image
+  account's other repos, the lktec-bot release module is already live here: a `fix:`/`feat:` commit on `main`
+  drives a real version bump, a GitHub release with generated notes, and a multi-arch, cosign-signed Docker image
   push to `ghcr.io/lukislp/studylife-discord`. Get the type right - `chore:`/`docs:`/`test:` do not
   trigger a release, `fix:`/`feat:` do. If the PR is squash-merged, the squashed commit message -
-  usually the PR title - is what ends up in history and what semantic-release parses.
+  usually the PR title - is what ends up in history and what the release module parses.
 - **Tests for new functionality.** `tests/` covers the FastAPI app end to end with `fakes.py`
   standing in for Discord and StudyLife: `test_commands.py` exercises the slash-command handlers,
   `test_webhooks.py` the `timer.started`/`timer.ended` webhook receiver and its HMAC signature
