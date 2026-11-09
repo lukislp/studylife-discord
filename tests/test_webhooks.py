@@ -53,3 +53,7 @@ def test_wants_announcement_false_for_note_created() -> None:
 
 def test_wants_announcement_false_for_non_string_event_type() -> None:
     assert wants_announcement(None) is False
+
+
+def test_non_ascii_signature_header_is_rejected_not_raised() -> None:
+    assert verify_webhook_signature(SECRET, "caf\u00e9", BODY) is False

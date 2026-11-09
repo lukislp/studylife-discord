@@ -23,6 +23,10 @@ dev = [
     "pytest-asyncio>=0.24",
     "ruff>=0.7",
 ]
+# Fuzzing harness (fuzz/), Linux only - the atheris wheel does not exist for Windows.
+fuzz = [
+    "atheris==3.0.0",
+]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
