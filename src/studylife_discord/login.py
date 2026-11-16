@@ -125,16 +125,16 @@ def _exchange_assertion(base_url: str, assertion: str) -> str:
             timeout=10.0,
         )
     except httpx.HTTPError as exc:
-        raise LoginError(f"Could not reach StudyLife: {exc}") from exc
+        raise LoginError(f"Could not reach StudyAtrium: {exc}") from exc
 
     if response.status_code != 200:
         raise LoginError(
-            f"StudyLife rejected the login ({response.status_code}): {response.text.strip()}"
+            f"StudyAtrium rejected the login ({response.status_code}): {response.text.strip()}"
         )
     try:
         return str(response.json()["apiKey"])
     except (KeyError, TypeError, ValueError) as exc:
-        raise LoginError("StudyLife returned an unexpected response shape.") from exc
+        raise LoginError("StudyAtrium returned an unexpected response shape.") from exc
 
 
 def run_login(instance_url: str) -> str:
@@ -148,7 +148,7 @@ def run_login(instance_url: str) -> str:
         f"{urlencode({'redirect_uri': redirect_uri, 'state': state_token})}"
     )
 
-    print(f"Opening your browser to log in to StudyLife:\n  {connect_url}")
+    print(f"Opening your browser to log in to StudyAtrium:\n  {connect_url}")
     webbrowser.open(connect_url)
 
     result = callback_server.wait_for_callback(CALLBACK_TIMEOUT_SECONDS)

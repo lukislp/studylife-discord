@@ -87,7 +87,7 @@ async def interactions(
 
         client: StudyLifeClient | None = request.app.state.studylife_client
         if client is None:
-            content = "Der Bot ist noch nicht mit StudyLife verbunden."
+            content = "Der Bot ist noch nicht mit StudyAtrium verbunden."
         else:
             content = await dispatch(command_name, options, client)
 
