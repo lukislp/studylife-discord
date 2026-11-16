@@ -78,7 +78,7 @@ async def test_handle_kurse_zero() -> None:
 
     result = await handle_kurse(client, {})
 
-    assert result == "Du hast aktuell keine Kurse in StudyLife angelegt."
+    assert result == "Du hast aktuell keine Kurse in StudyAtrium angelegt."
 
 
 async def test_handle_kurse_one_uses_singular() -> None:
@@ -224,7 +224,7 @@ async def test_handle_naechste_session_none_upcoming() -> None:
 
     result = await handle_naechste_session(client, {})
 
-    assert result == "Du hast aktuell keine geplante Lernsession in StudyLife."
+    assert result == "Du hast aktuell keine geplante Lernsession in StudyAtrium."
 
 
 async def test_handle_naechste_session_one_upcoming() -> None:
@@ -249,7 +249,7 @@ async def test_handle_lernziele_zero() -> None:
 
     result = await handle_lernziele(client, {})
 
-    assert result == "Du hast aktuell keine Lernziele in StudyLife angelegt."
+    assert result == "Du hast aktuell keine Lernziele in StudyAtrium angelegt."
 
 
 async def test_handle_lernziele_mixed_completed_and_open() -> None:
@@ -276,7 +276,7 @@ async def test_handle_studiengaenge_zero() -> None:
 
     result = await handle_studiengaenge(client, {})
 
-    assert result == "Du hast aktuell keinen Studiengang in StudyLife angelegt."
+    assert result == "Du hast aktuell keinen Studiengang in StudyAtrium angelegt."
 
 
 async def test_handle_studiengaenge_multiple() -> None:
@@ -403,7 +403,7 @@ async def test_handle_notizen_anzahl_zero() -> None:
 
     result = await handle_notizen_anzahl(client, {})
 
-    assert result == "Du hast aktuell keine Notizen in StudyLife."
+    assert result == "Du hast aktuell keine Notizen in StudyAtrium."
 
 
 async def test_handle_notizen_anzahl_some() -> None:

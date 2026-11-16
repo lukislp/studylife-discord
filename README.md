@@ -1,16 +1,18 @@
-# studylife-discord
+# StudyAtrium Discord Bot
+
+(formerly StudyLife)
 
 [![CI](https://github.com/lukislp/studylife-discord/actions/workflows/ci.yml/badge.svg)](https://github.com/lukislp/studylife-discord/actions/workflows/ci.yml) [![OpenSSF Scorecard](https://img.shields.io/ossf-scorecard/github.com/lukislp/studylife-discord?label=openssf+scorecard&style=flat)](https://scorecard.dev/viewer/?uri=github.com/lukislp/studylife-discord) [![CodeQL](https://github.com/lukislp/studylife-discord/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/lukislp/studylife-discord/security/code-scanning)
 [![Release](https://img.shields.io/github/v/release/lukislp/studylife-discord)](https://github.com/lukislp/studylife-discord/releases)
 [![License: AGPL-3.0](https://img.shields.io/github/license/lukislp/studylife-discord)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB)](https://www.python.org/)
 
-Discord bot for [StudyLife](https://github.com/lukislp/studylife): slash commands for
+Discord bot for [StudyAtrium](https://github.com/lukislp/studylife): slash commands for
 courses/timer/study time/study programs/notes, plus automatic focus-timer start/end
-channel announcements driven by StudyLife's own webhook system.
+channel announcements driven by StudyAtrium's own webhook system.
 
 Single-user by design - unlike [studylife-alexa](https://github.com/lukislp/studylife-alexa),
-there's no per-Discord-user account linking. One StudyLife account logs in once
+there's no per-Discord-user account linking. One StudyAtrium account logs in once
 (`login.py`) and the bot acts on that account for every command.
 
 ## Status
@@ -33,7 +35,7 @@ there's no per-Discord-user account linking. One StudyLife account logs in once
 - `/notizen-anzahl`
 - `/notiz-erstellen text:<...>`
 
-Automatic announcements: subscribing to StudyLife's `timer.started`/`timer.ended`
+Automatic announcements: subscribing to StudyAtrium's `timer.started`/`timer.ended`
 webhook events posts a plain channel message (via Discord's REST API, not a Gateway
 Rich Presence - this bot never holds a persistent connection) to
 `DISCORD_ANNOUNCE_CHANNEL_ID` whenever the focus timer starts or stops.
@@ -84,7 +86,7 @@ uv run ruff format --check .
 5. In the Discord Developer Portal's **General Information** page, set
    **Interactions Endpoint URL** to `https://<your-public-url>/interactions` (Discord
    sends a PING immediately and requires a valid signed PONG before saving).
-6. To enable announcements, create a webhook via StudyLife pointing at
+6. To enable announcements, create a webhook via StudyAtrium pointing at
    `https://<your-public-url>/webhooks/studylife` subscribed to `timer.started` and
    `timer.ended`, and set `STUDYLIFE_WEBHOOK_SECRET` to the secret it gives you plus
    `DISCORD_ANNOUNCE_CHANNEL_ID` to the target channel's ID.

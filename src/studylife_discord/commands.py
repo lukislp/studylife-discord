@@ -36,7 +36,7 @@ _TIME_PERIODS: dict[str, tuple[int, int, int, str]] = {
 }
 
 COMMAND_DEFINITIONS: list[dict[str, object]] = [
-    {"name": "kurse", "description": "Zeigt deine Kurse in StudyLife.", "type": 1},
+    {"name": "kurse", "description": "Zeigt deine Kurse in StudyAtrium.", "type": 1},
     {"name": "timer", "description": "Zeigt den Status deines Fokus-Timers.", "type": 1},
     {
         "name": "lernzeit",
@@ -208,8 +208,8 @@ def _next_upcoming_session(
 async def handle_kurse(client: StudyLifeClient, options: dict[str, str]) -> str:
     courses = await client.list_courses()
     if not courses:
-        return "Du hast aktuell keine Kurse in StudyLife angelegt."
-    return f"Du hast aktuell {_pluralize(len(courses), 'Kurs', 'Kurse')} in StudyLife."
+        return "Du hast aktuell keine Kurse in StudyAtrium angelegt."
+    return f"Du hast aktuell {_pluralize(len(courses), 'Kurs', 'Kurse')} in StudyAtrium."
 
 
 async def handle_timer(client: StudyLifeClient, options: dict[str, str]) -> str:
@@ -247,7 +247,7 @@ async def handle_naechste_session(client: StudyLifeClient, options: dict[str, st
     sessions = await client.list_all_sessions()
     upcoming = _next_upcoming_session(sessions)
     if upcoming is None:
-        return "Du hast aktuell keine geplante Lernsession in StudyLife."
+        return "Du hast aktuell keine geplante Lernsession in StudyAtrium."
     start_dt, course_name = upcoming
     text = f"Deine nächste Lernsession ist am {start_dt:%d.%m.} um {start_dt:%H:%M} Uhr"
     return text + (f" für {course_name}." if course_name else ".")
@@ -256,20 +256,21 @@ async def handle_naechste_session(client: StudyLifeClient, options: dict[str, st
 async def handle_lernziele(client: StudyLifeClient, options: dict[str, str]) -> str:
     goals = await client.list_course_goals()
     if not goals:
-        return "Du hast aktuell keine Lernziele in StudyLife angelegt."
+        return "Du hast aktuell keine Lernziele in StudyAtrium angelegt."
     open_goals = sum(1 for g in goals if not g.get("completedAt"))
     verb = "ist" if open_goals == 1 else "sind"
     count_text = _pluralize(len(goals), "Lernziel", "Lernziele")
-    return f"Du hast {count_text} in StudyLife, davon {verb} {open_goals} noch offen."
+    return f"Du hast {count_text} in StudyAtrium, davon {verb} {open_goals} noch offen."
 
 
 async def handle_studiengaenge(client: StudyLifeClient, options: dict[str, str]) -> str:
     programs = await client.list_study_programs()
     if not programs:
-        return "Du hast aktuell keinen Studiengang in StudyLife angelegt."
+        return "Du hast aktuell keinen Studiengang in StudyAtrium angelegt."
     names = ", ".join(str(p.get("name", "-")) for p in programs)
     return (
-        f"Du hast {_pluralize(len(programs), 'Studiengang', 'Studiengänge')} in StudyLife: {names}."
+        f"Du hast {_pluralize(len(programs), 'Studiengang', 'Studiengänge')} "
+        f"in StudyAtrium: {names}."
     )
 
 
@@ -309,8 +310,8 @@ async def handle_notizen_suche(client: StudyLifeClient, options: dict[str, str])
 async def handle_notizen_anzahl(client: StudyLifeClient, options: dict[str, str]) -> str:
     notes = await client.list_notes()
     if not notes:
-        return "Du hast aktuell keine Notizen in StudyLife."
-    return f"Du hast insgesamt {_pluralize(len(notes), 'Notiz', 'Notizen')} in StudyLife."
+        return "Du hast aktuell keine Notizen in StudyAtrium."
+    return f"Du hast insgesamt {_pluralize(len(notes), 'Notiz', 'Notizen')} in StudyAtrium."
 
 
 async def handle_notiz_erstellen(client: StudyLifeClient, options: dict[str, str]) -> str:
@@ -334,7 +335,7 @@ HANDLERS = {
     "notiz-erstellen": handle_notiz_erstellen,
 }
 
-UNREACHABLE_MESSAGE = "StudyLife konnte gerade nicht erreicht werden. Versuch es später noch mal."
+UNREACHABLE_MESSAGE = "StudyAtrium konnte gerade nicht erreicht werden. Versuch es später noch mal."
 
 
 async def dispatch(command_name: str, options: dict[str, str], client: StudyLifeClient) -> str:

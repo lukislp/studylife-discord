@@ -22,16 +22,16 @@ small - but it is the same for every change, including the maintainer's own.
   trigger a release, `fix:`/`feat:` do. If the PR is squash-merged, the squashed commit message -
   usually the PR title - is what ends up in history and what the release module parses.
 - **Tests for new functionality.** `tests/` covers the FastAPI app end to end with `fakes.py`
-  standing in for Discord and StudyLife: `test_commands.py` exercises the slash-command handlers,
+  standing in for Discord and StudyAtrium: `test_commands.py` exercises the slash-command handlers,
   `test_webhooks.py` the `timer.started`/`timer.ended` webhook receiver and its HMAC signature
   check, `test_verify.py` the Ed25519 request-signature verification every Discord interaction goes
   through, and `test_main.py` the FastAPI routes themselves. Add tests alongside the behaviour
   you're changing rather than as an afterthought.
 - **No secrets or personal data.** Nothing under `src/` or `tests/` should reference a real
-  Discord bot token, StudyLife instance URL, or personal Discord/StudyLife IDs - use a placeholder
+  Discord bot token, StudyAtrium instance URL, or personal Discord/StudyAtrium IDs - use a placeholder
   like `https://your-studylife-instance` or `.env.example`'s empty values, the way the existing
   code does.
-- **Wire shapes.** `studylife_client.py` talks to the same StudyLife REST API the other
+- **Wire shapes.** `studylife_client.py` talks to the same StudyAtrium REST API the other
   studylife-* clients do, and reads responses as plain `dict[str, object]` rather than validated
   DTOs. The server silently accepts and ignores unknown JSON field names, and a wrong key on the
   read side just returns `None`/a default instead of raising - so a typo produces a green build and
@@ -52,7 +52,7 @@ Requires Python 3.12 and [`uv`](https://docs.astral.sh/uv/). `ci.yml`'s `lint` j
 commands above (not just `ruff check` - formatting drift fails CI on its own), and `test` runs
 `pytest`. A push to `main` that adds a release additionally builds and pushes a signed multi-arch
 (amd64 + arm64) Docker image via `Dockerfile` - see `README.md`'s Development/Setup sections for
-running the bot itself against a real Discord application and StudyLife instance.
+running the bot itself against a real Discord application and StudyAtrium instance.
 
 ## Security issues
 
