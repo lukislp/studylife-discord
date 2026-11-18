@@ -1,4 +1,4 @@
-"""FastAPI app wiring Discord's HTTP Interactions endpoint and StudyLife's webhook push
+"""FastAPI app wiring Discord's HTTP Interactions endpoint and StudyAtrium's webhook push
 endpoint - both stateless request/response, no Gateway/WebSocket connection needed.
 """
 

@@ -1,4 +1,4 @@
-"""Typed async HTTP client for StudyLife's REST API - unlike studylife-alexa's client.py,
+"""Typed async HTTP client for StudyAtrium's REST API - unlike studylife-alexa's client.py,
 everything here can stay async end to end: Discord's HTTP Interactions model (unlike
 ask-sdk-core's dispatcher) has no synchronous-callback constraint, so there's no need for
 a parallel set of *_sync functions.
@@ -10,7 +10,7 @@ import httpx
 
 
 class StudyLifeApiError(Exception):
-    """Raised for any non-2xx response from StudyLife, carrying the status and body."""
+    """Raised for any non-2xx response from StudyAtrium, carrying the status and body."""
 
     def __init__(self, status_code: int, body: str) -> None:
         super().__init__(f"StudyAtrium API returned {status_code}: {body.strip()}")

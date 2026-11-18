@@ -11,7 +11,7 @@
 # what actually lets its traffic reach the pod.
 #
 # Explicit path allowlist, NOT a defaultBackend: /interactions (Discord's servers call this
-# for every slash command) and /webhooks/studylife (StudyLife's servers call this for
+# for every slash command) and /webhooks/studylife (StudyAtrium's servers call this for
 # timer.started/timer.ended events). /healthz is deliberately absent - operator-only, no
 # reason to be internet-facing.
 #

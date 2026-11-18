@@ -24,14 +24,14 @@ class Settings(BaseSettings):
     # disable announcements entirely (slash commands still work without it).
     discord_announce_channel_id: str | None = None
 
-    # This single person's StudyLife instance and API key - no per-user account linking
-    # like studylife-alexa needs, since this bot only ever acts on one StudyLife account
+    # This single person's StudyAtrium instance and API key - no per-user account linking
+    # like studylife-alexa needs, since this bot only ever acts on one StudyAtrium account
     # (obtained once via login.py, mirroring studylife-cli/studylife-mcp's own login
     # flow), not on behalf of arbitrary Discord users.
     studylife_base_url: AnyHttpUrl
     studylife_api_key: str | None = None
 
-    # HMAC-SHA256 secret StudyLife signs each webhook delivery with (X-StudyLife-
+    # HMAC-SHA256 secret StudyAtrium signs each webhook delivery with (X-StudyLife-
     # Webhook-Signature header) - the same value entered when registering this bot's
     # webhook via WebhooksProxy.Create (client.py's register_webhook). Required only for
     # the webhook receiver (main.py's /webhooks/studylife route), not for slash commands.
