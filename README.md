@@ -96,6 +96,10 @@ uv run ruff format --check .
 Self-hosted (K3s + Tailscale Funnel), same pattern as
 [studylife-alexa](https://github.com/lukislp/studylife-alexa).
 
+## Privacy
+
+See [PRIVACY.md](PRIVACY.md) for what the bot stores and where data goes.
+
 ## License
 
 AGPL-3.0
