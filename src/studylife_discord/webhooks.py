@@ -1,4 +1,4 @@
-"""Verification and event-filtering for StudyLife's outgoing webhooks - see
+"""Verification and event-filtering for StudyAtrium's outgoing webhooks - see
 studylife-webhooks/src/studylife_webhooks/delivery.py for the exact signing scheme this
 mirrors: HMAC-SHA256 of the raw JSON body using the per-webhook secret, hex-encoded.
 """

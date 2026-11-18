@@ -1,11 +1,11 @@
 # The service itself. Image tag is a placeholder overwritten by Flux's
 # ImageUpdateAutomation (k8s/flux/04-image-update-automation.yaml) the moment it first
-# reconciles against a real published tag - mirrors every other StudyLife add-on's own
+# reconciles against a real published tag - mirrors every other StudyAtrium add-on's own
 # k8s/*-app.yaml. This repo's Dockerfile creates "appuser" with an explicit numeric
 # --uid 1000, so runAsNonRoot/runAsUser is safe here without live inspection.
 #
 # No PersistentVolumeClaim, unlike studylife-alexa/studylife-mcp/studylife-webhooks - this
-# bot holds no SQLite store at all (see Dockerfile's own comment); the single StudyLife API
+# bot holds no SQLite store at all (see Dockerfile's own comment); the single StudyAtrium API
 # key and all Discord credentials live purely in the Secret above. Fully stateless, so
 # RollingUpdate (the default strategy) is fine, and multiple replicas would be too if ever
 # needed - not done here since a personal-use bot never needs more than one.
