@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   review:
-    uses: lukislp/ci-workflows/.github/workflows/dependency-review.yml@deb70637c062a353cc9ad9ad3c296b2b68304212 # v1.11.5
+    uses: lukislp/ci-workflows/.github/workflows/dependency-review.yml@b187fe820ab8fec3d1252e42987b4da55fa9e054 # v1.11.7
     permissions:
       contents: read
       pull-requests: write
